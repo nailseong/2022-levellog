@@ -3,20 +3,20 @@ pipeline {
   stages {
     stage('Ready') {
       steps {
-        sh 'sh "echo \'Ready\'"'
+        sh 'echo "Ready"'
       }
     }
 
     stage('Build') {
       steps {
-        sh '''sh "echo \'Build Jar\'"
+        sh '''echo "Build Jar"
 '''
       }
     }
 
     stage('Deploy') {
       steps {
-        sh '''sh "echo \'Deploy GCP\'"
+        sh '''echo "Deploy GCP"
 '''
       }
     }
