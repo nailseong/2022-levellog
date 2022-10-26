@@ -1,0 +1,29 @@
+= Feedback
+:toc: left
+:toclevels: 2
+:sectlinks:
+:source-highlighter: highlightjs
+
+[[home]]
+== home
+
+* link:index.html[목록으로 가기]
+
+[[login]]
+== 로그인
+
+[[login-success]]
+=== 깃허브 로그인 성공
+
+operation::auth/login[]
+
+[[login-exception]]
+=== 깃허브 로그인 예외
+
+==== authorizationCode에 공백이나 null이 들어올 경우
+
+include::{snippets}/auth/login/exception/null/http-response.adoc[]
+
+==== 깃허브에서 토큰 받아오기 실패
+
+include::{snippets}/auth/login/exception/github-fail/http-response.adoc[]
